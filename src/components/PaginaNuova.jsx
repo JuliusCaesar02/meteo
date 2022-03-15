@@ -50,7 +50,7 @@ const NuovaPagina = () => {
                 {previsioni.forecast.forecastday.map((element)=> {
                     return (
                         <>    
-                        <DettagliPrevisione giorno={element} key={element.date}/>
+                        <DettagliPrevisione giorno={element}/>
                         </>
                     )
                 })}

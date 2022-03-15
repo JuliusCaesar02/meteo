@@ -36,22 +36,21 @@ function HomePage() {
         //sta cosa della classe del div dice che se la temperatura è superiore di 20 gradi mi cambia lo sfondo
         <div className={(typeof meteoAttuale !== 'undefined') ? ((meteoAttuale.current.temp_c > 20) ? 'App warm' : 'App') : 'App city'}>
           <div className="shadow">
-          <h1>weather forecast</h1>
-          <div className="inputContainer">
-            <input className="cittaInput" type="text" name="" id="" onKeyDown={(key)=> {if(key.key === 'Enter' ){cercaCitta(citta);}}} onChange={(ev)=>{
-              setCitta(ev.target.value);
-            }} />
-            <button className="inputBtn" onClick={()=>{
-              cercaCitta(citta);
-            }}>
-              <BiSearchAlt className="icon" />
-            </button>
-          </div>
+            <h1>weather forecast</h1>
+            <div className="inputContainer">
+              <input className="cittaInput" type="text" name="" id="" onKeyDown={(key)=> {if(key.key === 'Enter' ){cercaCitta(citta);}}} onChange={(ev)=>{
+                setCitta(ev.target.value);
+              }} />
+              <button className="inputBtn" onClick={()=>{
+                cercaCitta(citta);
+              }}>
+                <BiSearchAlt className="icon" />
+              </button>
+            </div>
 
-          <MeteoAttualeCard meteoAttuale={meteoAttuale}/>
+            <MeteoAttualeCard meteoAttuale={meteoAttuale}/>
 
-          {forecastRender()}
-
+            {forecastRender()}
           </div>
         </div>   
     );
