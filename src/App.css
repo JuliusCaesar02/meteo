@@ -3,7 +3,7 @@
 	margin: 0;
 }
 
-*::first-letter{
+*::first-letter {
 	text-transform: capitalize;
 }
 
@@ -127,9 +127,10 @@ img {
 	font-size: 1.05em;
 }
 
-.paginaNuovaContainer, .loading{
+.paginaNuovaContainer,
+.loading {
 	text-align: center;
-	height: 100vh;
+	height: calc(100vh + 100px);
 	background-color: rgba(141, 103, 164, 0.583);
 	color: white;
 }
@@ -140,7 +141,7 @@ img {
 	align-items: center;
 }
 
-.dettagliOrari{
+.dettagliOrari {
 	padding-top: 3.5vh;
 }
 
@@ -173,7 +174,7 @@ img {
 	align-items: flex-start;
 }
 
-.singleCardsContainer img{
+.singleCardsContainer img {
 	-webkit-user-drag: none;
 }
 
@@ -216,4 +217,5 @@ img {
 .dettagliPrevisioneContainer:hover {
 	opacity: 1;
 }
+
 
