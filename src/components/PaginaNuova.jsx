@@ -43,7 +43,7 @@ const NuovaPagina = () => {
                 {/* Il testo "go back" è incapsulato in un <p> in quanto per far funzionare il text-transform su ::first-letter è necessario che il
                 contenitore sia un display block e non posso modificare il display del Link in quanto è già un flex. Avrei potuto mettere manualmente la g maiuscola ma
                 mi da fastidio, quindi risolvo in questo modo */}
-                <h2>next days in {params.citta}</h2>
+                <h2>next days in {params.citta.charAt(0).toUpperCase() + params.citta.slice(1)}</h2>
             </div>
 
             <div className='singleCardsContainer'>

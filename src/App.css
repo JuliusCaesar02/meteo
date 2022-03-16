@@ -194,10 +194,13 @@ img {
 
 .dettagliPrevisioneContainer .dettagliOrari{
 	opacity: 0;
-	transition: all 1s;
+	
+	transition: all 0.5s;
+	
 }
 
 .dettagliPrevisioneContainer.extended .dettagliOrari{
+	transition-delay: 0.1s;
 	opacity: 1;
 }
 
