@@ -49,10 +49,7 @@ const NuovaPagina = () => {
             <div className='singleCardsContainer'>
                 {previsioni.forecast.forecastday.map((element)=> {
                     return (
-                        <>    
-                        {console.log(element.date_epoch)}
                         <DettagliPrevisione giorno={element} key={element.date_epoch}/>
-                        </>
                     )
                 })}
 
