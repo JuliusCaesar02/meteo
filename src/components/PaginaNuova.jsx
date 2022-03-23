@@ -50,7 +50,8 @@ const NuovaPagina = () => {
                 {previsioni.forecast.forecastday.map((element)=> {
                     return (
                         <>    
-                        <DettagliPrevisione giorno={element}/>
+                        {console.log(element.date_epoch)}
+                        <DettagliPrevisione giorno={element} key={element.date_epoch}/>
                         </>
                     )
                 })}

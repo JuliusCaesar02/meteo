@@ -28,6 +28,7 @@ function HomePage() {
   }, [])
 
   function cercaCitta(nomeCitta) {
+    
     //http://api.weatherapi.com/v1/current.json?key=f656a3e4a7054753873211018220803&q=London;
     fetch('http://api.weatherapi.com/v1/current.json?key='+key +'&q='+nomeCitta)
     .then(response => {
